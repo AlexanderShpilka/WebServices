@@ -1,0 +1,22 @@
+.page-footer {
+  padding: 30px 0;
+  background-color: #131b36;
+
+  @include tablet {
+    padding-bottom: 45px;
+  }
+
+  @include desktop {
+    padding-bottom: 56px;
+  }
+
+  &__copyright {
+    margin-top: 15px;
+    text-align: center;
+
+    & small {
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+}

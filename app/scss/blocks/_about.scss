@@ -1,0 +1,49 @@
+.about {
+  padding: 30px 0;
+  color: #fff;
+  background-image: url("../img/counter-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: padding 0.3s;
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  @include desktop {
+    padding: 49px 0 93px;
+  }
+
+  &__title {
+    text-shadow: 0 0 20px #000;
+
+    & span {
+      &::before {
+        background-color: $heading-color-light;
+      }
+
+      &::after {
+        background-color: $heading-color-light;
+      }
+    }
+  }
+
+  &__text {
+    padding: 8px 10px;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    transition: padding 0.3s;
+
+    @include tablet {
+      padding: 12px 10px;
+      font-size: 16px;
+    }
+
+    @include desktop {
+      padding: 12px 30px;
+    }
+  }
+}

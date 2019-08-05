@@ -1,0 +1,12 @@
+.scroll {
+  padding: 40px 0;
+  text-align: center;
+
+  @include tablet {
+    padding: 100px 0 60px;
+  }
+
+  @include desktop {
+    padding: 140px 0 86px;
+  }
+}

@@ -1,0 +1,44 @@
+.showcase {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -82px;
+  background-attachment: fixed;
+
+  @media (max-height: 620px) {
+    background-position: center;
+  }
+
+  &__title {
+    padding-top: 200px;
+    text-shadow: 0 0 20px #000;
+    transition: padding 0.3s;
+
+    @include tablet {
+      padding-top: 250px;
+    }
+
+    @include desktop {
+      padding-top: 300px;
+    }
+  }
+
+  &__text {
+    max-width: 700px;
+    padding: 10px 5px;
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    @include desktop {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}

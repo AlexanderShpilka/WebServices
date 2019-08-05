@@ -1,0 +1,91 @@
+.feature {
+  padding: 10px;
+  text-align: center;
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 25%;
+    padding: 25px 15px 10px;
+
+    &:first-of-type {
+      padding-right: 38px;
+    }
+
+    &:last-of-type {
+      padding-left: 38px;
+    }
+  }
+
+  &__title {
+    max-width: 250px;
+    padding: 15px 5px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 22px;
+    color: $heading-color-dark;
+    text-transform: capitalize;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include desktop {
+      padding-top: 28px;
+      font-size: 20px;
+    }
+
+    &--payment {
+      width: 125px;
+
+      @include tablet {
+        width: 135;
+      }
+
+      @include desktop {
+        width: 145px;
+      }
+    }
+
+    &--auth {
+      width: 215px;
+
+      @include tablet {
+        width: 240px;
+      }
+
+      @include desktop {
+        width: 250px;
+      }
+    }
+
+    &--secure {
+      width: 170px;
+
+      @include tablet {
+        width: 180px;
+      }
+
+      @include desktop {
+        width: 190px;
+      }
+    }
+
+    &--support {
+      width: 120px;
+
+      @include tablet {
+        width: 130px;
+      }
+
+      @include desktop {
+        width: 140px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.contact {
+  padding: 30px 0;
+  background-color: #f9f9f9;
+  transition: padding 0.3s;
+
+  @include tablet {
+    padding: 37px 0;
+  }
+
+  @include desktop {
+    padding: 43px 0 108px;
+  }
+
+  &__title {
+    color: $heading-color-dark;
+
+    & span {
+      &::before {
+        background-color: $primary-color;
+      }
+
+      &::after {
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  &__address {
+    width: 70%;
+    padding: 17px 10px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $paragraph-color-dark;
+    text-align: center;
+  }
+
+  &__box {
+    @include tablet {
+      display: flex;
+    }
+
+    @include desktop {
+      margin-top: 53px;
+    }
+  }
+
+  &__form-wrapper {
+    @include tablet {
+      width: 50%;
+      padding-left: 5px;
+    }
+  }
+}

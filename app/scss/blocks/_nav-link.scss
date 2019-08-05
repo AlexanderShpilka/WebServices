@@ -1,0 +1,24 @@
+.nav-link {
+  border-bottom: 1px solid transparent;
+  color: #8a8a8a !important;
+  line-height: 28px;
+  text-transform: capitalize;
+  transition: border 0.3s;
+
+  &:hover:not(.nav-link--active) {
+    border-bottom-color: #8a8a8a;
+  }
+
+  @include tablet {
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 14px;
+    margin-left: 14px;
+  }
+
+  &--active {
+    color: #354a9e !important;
+    border-bottom: 1px solid #354a9e;
+  }
+}

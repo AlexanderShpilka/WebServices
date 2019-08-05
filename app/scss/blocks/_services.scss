@@ -1,0 +1,59 @@
+.services {
+  padding: 30px 0 15px;
+  transition: padding 0.3s;
+
+  @include tablet {
+    padding: 45px 0;
+  }
+
+  @include desktop {
+    padding: 72px 0 44px;
+  }
+
+  &__title {
+    color: $heading-color-dark;
+
+    & span {
+      &::before {
+        background-color: $primary-color;
+      }
+
+      &::after {
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  &__text {
+    padding: 20px 10px 10px;
+    font-size: 14px;
+    color: $paragraph-color-dark;
+    text-align: center;
+    transition: padding 0.3s;
+
+    @include tablet {
+      padding-top: 23px;
+      font-size: 16px;
+    }
+
+    @include desktop {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+
+  &__features {
+    padding: 15px 0;
+    transition: padding 0.3s;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+
+    @include desktop {
+      padding: 25px 0;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.notification {
+  display: none;
+  padding: 30px 0 10px;
+  text-align: center;
+
+  @include desktop {
+    padding-top: 0;
+  }
+
+  & img {
+    position: relative;
+    left: -15px;
+    width: 200px;
+
+    @include tablet {
+      width: 258px;
+    }
+
+    @include desktop {
+      left: -25px;
+    }
+  }
+
+  &__title {
+    margin-top: 10px;
+    color: $heading-color-dark;
+
+    @include desktop {
+      padding-bottom: 5px;
+      padding-left: 27px;
+      margin-top: 13px;
+    }
+  }
+
+  &__text {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: $paragraph-color-dark;
+
+    @include tablet {
+      max-width: 370px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 16px;
+    }
+
+    @include desktop {
+      padding-top: 3px;
+      padding-left: 20px;
+    }
+  }
+}

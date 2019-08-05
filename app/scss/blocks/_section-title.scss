@@ -1,0 +1,70 @@
+.section-title {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  & span {
+    position: relative;
+    padding: 10px 15px 7px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 50px;
+      height: 2px;
+
+      @include tablet {
+        width: 60px;
+      }
+
+      @include desktop {
+        width: 70px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 50px;
+      height: 2px;
+
+      
+      @include tablet {
+        width: 60px;
+      }
+
+      @include desktop {
+        width: 70px;
+      }
+    }
+
+    @include tablet {
+      padding: 12px 20px 10px;
+    }
+
+    @include desktop {
+      padding: 16px 33px;
+    }
+  }
+
+  @include tablet {
+    padding: 10px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @include desktop {
+    padding: 15px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}

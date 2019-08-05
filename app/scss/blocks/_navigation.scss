@@ -1,0 +1,35 @@
+.navigation {
+  transition: padding 0.3s;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  @include desktop {
+    padding-top: 20px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    padding: 5px 0;
+    margin: 0 15px;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    transition: border 0.3s;
+
+    &:hover {
+      border-bottom-color: #fff;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

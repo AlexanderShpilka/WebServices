@@ -1,0 +1,25 @@
+// @import your .scss files here
+@import 'global/vars';
+@import 'global/mixins';
+@import 'global/fonts';
+@import 'global/global';
+@import 'global/wrapper';
+@import 'global/visually-hidden';
+@import 'global/bugs-fixes';
+
+@import 'blocks/navbar';
+@import 'blocks/nav-link';
+@import 'blocks/showcase';
+@import 'blocks/page-title';
+@import 'blocks/services';
+@import 'blocks/section-title';
+@import 'blocks/feature';
+@import 'blocks/about';
+@import 'blocks/contact';
+@import 'blocks/map';
+@import 'blocks/form';
+@import 'blocks/input';
+@import 'blocks/notification';
+@import 'blocks/page-footer';
+@import 'blocks/navigation';
+@import 'blocks/scroll';

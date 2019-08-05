@@ -1,0 +1,42 @@
+.form {
+  &__controls {
+    padding: 8px 10px;
+
+    @include tablet {
+      margin-top: -5px;
+    }
+
+    @include desktop {
+      padding: 8px 0 8px 10px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    min-width: 130px;
+    min-height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid $primary-color;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: $primary-color;
+    transition: color 0.3s, background-color 0.3s;
+
+    @include tablet {
+      margin-right: 10px;
+    }
+
+    @include desktop {
+      margin-top: 20px;
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $primary-color;
+      background-color: #fff;
+    }
+  }
+}

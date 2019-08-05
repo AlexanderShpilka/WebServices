@@ -1,0 +1,23 @@
+.input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid $primary-color;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #a9a9a9;
+  outline: 0;
+
+  @include desktop {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #728eff;
+  }
+
+  &--invalid {
+    border-color: #c61304;
+  }
+}
