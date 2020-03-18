@@ -1,3 +1,3 @@
-# Ikajo Test Task
+# Web Services
 
 [Preview](https://alexandershpilka.github.io/WebServices/)
